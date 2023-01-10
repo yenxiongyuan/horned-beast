@@ -2,7 +2,7 @@ import React from "react";
 
 class Footer extends React.Component {
   render() {
-    return <p></p>;
+    return <p>&copy;Yen Xiong Yuan</p>;
   }
 }
 
