@@ -1,3 +1,13 @@
+Number and name of feature: Lab 2
+
+Estimate of time needed to complete: 6 hours
+
+Start time: 2:00
+
+Finish time: 9:00
+
+Actual time needed to complete: 7
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # horned-beast
