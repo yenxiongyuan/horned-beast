@@ -8,6 +8,20 @@ Finish time: 9:00
 
 Actual time needed to complete: 7
 
+
+
+Number and name of feature: Lab 3
+
+Estimate of time needed to complete: 7 hours
+
+Start time: 2:00
+
+Finish time: 10:00
+
+Actual time needed to complete: 8
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
