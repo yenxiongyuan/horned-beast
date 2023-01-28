@@ -5,7 +5,7 @@ import Main from "./Main";
 import Footer from "./Footer";
 import data from "./data/data.json";
 import Modal from "react-bootstrap/Modal";
-import { Form, ListGroup } from 'react-bootstrap'
+import { Form, ListGroup, Accordion } from "react-bootstrap";
 import HornedBeast from "./HornedBeast";
 
 
@@ -44,12 +44,12 @@ class App extends React.Component {
     const selected = event.target.value;
 
     if(selected === 'even') {
-      const newData = data.filter(newAnimal => newAnimal._id % 2 === 0);
+      const newData = data.filter(newAnimal => newAnimal.horns % 2 === 0);
       this.setState({
         animalData : newData
       })
     } else if(selected === 'odd') {
-      const newData = data.filter(newAnimal => newAnimal._id % 1 === 0);
+      const newData = data.filter(newAnimal => newAnimal.horns % 1 === 0);
       this.setState({
         animalData : newData
       })
@@ -64,7 +64,6 @@ class App extends React.Component {
     return (
       <>
         <Header animal={this.state.animal} />
-
         <Main
           data={data}
           addAnimals={this.addAnimals}
@@ -87,7 +86,6 @@ class App extends React.Component {
             );
           })}
         </ListGroup>
-
         <Form>
           <Form.Group>
             <Form.Select name="selected" onChange={this.handleSelect}>
@@ -99,6 +97,28 @@ class App extends React.Component {
           </Form.Group>
         </Form>
         <Footer />
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>number 1</Accordion.Header>
+            <Accordion.Body>number 1 content</Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>number 2</Accordion.Header>
+            <Accordion.Body>
+              <ul>
+                <li>
+                
+                  <HornedBeast
+                    title={this.state.animal.title}
+            
+                  />
+                </li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
       </>
     );
   }
